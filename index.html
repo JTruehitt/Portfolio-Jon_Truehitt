@@ -6,69 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jon Truehitt's Portfolio</title>
   </head>
+
   <body>
     <header>
       <h1>Jon Truehitt</h1>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-me">Contact Me</a></li>
-          <!-- <li><a href="#insert resume link here">Resume</a></li> -->
+          <li class="nav-item"><a href="#about">About Me</a></li>
+          <li class="nav-item"><a href="#my-projects">My Projects</a></li>
+          <li class="nav-item"><a href="#contact-me">Contact Me</a></li>
+          <!-- <li class="nav-item"><a href="#insert resume link here">Resume</a></li> -->
         </ul>
       </nav>
     </header>
-    <section id="top-design">
-      <p>insert cool subtitile here</p>
+
+    <section class="top-design">
+      <h2 class="section-title-top-design">insert cool subtitle here</h2>
     </section>
-    <section id="about">
-      <h2>About Me</h2>
+
+    <section class="about-me" id="about">
+      <h2 class="section-title section-title-about">About Me</h2>
+      <p class="section-subtitle section-subtitle-about"></p>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="card main-card">
+
+    <section class="my-projects" id="my-projects">
+      <h2 class="section-title section-title-projects">My Projects</h2>
+      <p class="section-subtitle section-subtitle-projects"></p>
+
+      <div class="projects">
+        <div class="project main-project">
           <div class="proj-desc main-proj-desc">
-            <h3>Project 1</h3>
-            <p>description</p>
+            <h3 class="project-title main-project-title">Project 1</h3>
+            <p class="project-subtitle main-project-subtitle">description</p>
           </div>
-          <a href="put link"><img src="put src" alt="describe" /></a>
+          <a href="put link" class="project-item main-project-item"
+            ><img
+              src="put src"
+              alt="describe"
+              class="project-img main-project-img"
+          /></a>
         </div>
-        <div class="card">
+
+        <div class="project">
           <div class="proj-desc">
-            <h4>Project 2</h4>
-            <p>description</p>
+            <h3 class="project-title">Project 2</h3>
+            <p class="project=subtitle">description</p>
           </div>
-          <a href="put link"><img src="put src" alt="describe" /></a>
+          <a href="put link" class="project-itme"
+            ><img src="put src" alt="describe" class="project-img"
+          /></a>
         </div>
-        <div class="card">
+
+        <div class="project">
           <div class="proj-desc">
-            <h4>Project 3</h4>
-            <p>description</p>
+            <h3 class="project-title">Project 3</h3>
+            <p class="project-subtitle">description</p>
           </div>
-          <a href="put link"><img src="put src" alt="describe" /></a>
+          <a href="put link" class="project-item"
+            ><img src="put src" alt="describe" class="project-img"
+          /></a>
         </div>
-        <div class="card">
+
+        <div class="project">
           <div class="proj-desc">
-            <h4>Project 4</h4>
-            <p>description</p>
+            <h3 class="project-title">Project 4</h3>
+            <p class="project-subtitle">description</p>
           </div>
-          <a href="put link"><img src="put src" alt="describe" /></a>
+          <a href="put link" class="project-item"
+            ><img src="put src" alt="describe" class="project-img"
+          /></a>
         </div>
-        <div class="card">
+
+        <div class="project">
           <div class="proj-desc">
-            <h4>Project 5</h4>
-            <p>description</p>
+            <h3 class="project-title">Project 5</h3>
+            <p class="project-subtitle">description</p>
           </div>
-          <a href="put link"><img src="put src" alt="describe" /></a>
+          <a href="put link" class="project-item"
+            ><img src="put src" alt="describe" class="project-img"
+          /></a>
         </div>
       </div>
     </section>
-    <section id="contact-me">
-      <h2>Contact Me</h2>
-      <p>407-922-1167</p>
-      <p>jontruehitt@gmail.com</p>
-      <a href="#put github link here">GitHub</a>
+
+    <section class="contact-me" id="contact-me">
+      <h2 class="section-title section-title-projects">Contact Me</h2>
+      <p class="section-subtitle section-subtitle-contact"></p>
+      <p class="contact-info phone">407-922-1167</p>
+      <a href="mailto:jontruehitt@gmail.com" class="contact-info email"
+        >jontruehitt@gmail.com</a
+      >
+      <a href="#put github link here" class="contact-info github">GitHub</a>
     </section>
     <footer></footer>
   </body>
