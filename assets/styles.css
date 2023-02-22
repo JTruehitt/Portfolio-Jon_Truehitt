@@ -15,8 +15,8 @@
 
   --fs-h1: 3rem;
   --fs-h2: 1.75rem;
-  --fs-h3: 1.25rem;
-  --fs-text: 1rem;
+  --fs-h3: 1rem;
+  --fs-text: 0.75rem;
 }
 
 /* General style settings */
@@ -39,6 +39,7 @@ h3 {
 
 h1 {
   font-size: var(--fs-h1);
+  margin: 1% 0 0 2%;
 }
 h2 {
   font-size: var(--fs-h2);
@@ -49,10 +50,11 @@ h3 {
 
 header {
   background: var(--clr-1);
-  padding: 1% 0 0 2%;
+  padding: 2% 2% 0 2%;
 }
 
-/* ! nav section needs some work */
+/* nav section */
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -65,34 +67,38 @@ nav {
   margin-right: 20px;
 }
 
-.nav-link {
+a {
   text-decoration: none;
+  color: var(--clr-accent);
 }
 
 /* Section titles */
+
 .section-title-top-design {
   text-align: right;
   padding: 20px 5% 20px 0;
   background: var(--clr-3);
+  color: var(--clr-1);
+}
+
+.about-me-content {
+  margin: 0 10%;
 }
 
 .section-title {
   margin: 10px 50% 10px 0;
-  padding-left: 4%;
+  padding: 1% 0 1% 4%;
   background: var(--clr-1);
-}
-
-/* ! need to play with img and p */
-img {
-  display: inline-block;
-}
-
-p {
-  display: inline-block;
+  border-radius: 0 100vmax 100vmax 0;
+  min-width: 225px;
+  max-width: 500px;
 }
 
 /* projects grid layout */
-/* !add media to collaspe to one column for small phones...maybe flex? */
+
+.project {
+  position: relative;
+}
 
 .projects {
   display: grid;
@@ -104,13 +110,47 @@ p {
 .project-img {
   width: 100%;
   height: auto;
+  border: 8px solid var(--clr-1);
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .proj-desc {
   position: absolute;
   background: var(--clr-1);
-  padding: 2% 2% 0 1%;
-  line-height: 0.5;
+  padding: 3%;
+  right: 0;
+  border-radius: 0 20px;
+}
+
+.main-project {
+  grid-column: span 2;
+}
+
+.project-subtitle {
+  margin: 0;
+}
+
+/* contact section */
+
+.contact-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 2rem;
+  flex-wrap: no-wrap;
+}
+
+.contact-item {
+  display: inline-flex;
+  min-width: 88px;
+  white-space: nowrap;
+}
+
+/* Pseudo classes */
+/* !need to figure out how to get product description to rotate when img is in hover */
+.project-img:hover {
+  box-shadow: 5px 5px 10px var(--clr-1);
+  transform: rotate(2deg);
 }
 
 /* adjusts text size for larger devices */
@@ -119,8 +159,8 @@ p {
   :root {
     --fs-h1: 4rem;
     --fs-h2: 2.5rem;
-    --fs-h3: 1.5rem;
-    --fs-text: 1.25rem;
+    --fs-h3: 1.25rem;
+    --fs-text: 1rem;
   }
 }
 
