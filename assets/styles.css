@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+/* CSS Custom Variables */
+
+:root {
+  --ff-titles: Georgia, serif;
+  --ff-text: Verdana, sans-serif;
+
+  --clr-1: #6096b4;
+  --clr-2: #93bfcf;
+  --clr-3: #bdcdd6;
+  --clr-accent: #eee9da;
+
+  --fs-h1: 4rem;
+  --fs-h2: 3rem;
+  --fs-h3: 2rem;
+  --fs-p: 1rem;
+}
+
+/* adjusts text size for larger devices */
+@media (min-width: 900px) {
+  :root {
+    --fs-h1: 5.5rem;
+    --fs-h2: 4rem;
+    --fs-h3: 2.5rem;
+    --fs-p: 1.5rem;
+  }
+}
