@@ -53,6 +53,13 @@ header {
   padding: 2% 2% 0 2%;
 }
 
+span {
+  color: var(--clr-accent);
+  font-size: var(--fs-text);
+  display: block;
+  text-align: center;
+}
+
 /* nav section */
 
 nav {
@@ -64,12 +71,15 @@ nav {
 .nav-item {
   text-decoration: none;
   display: inline-flex;
-  margin-right: 20px;
+  margin: 20px;
+  border: 2px solid var(--clr-accent);
+  color: var(--clr-accent);
 }
 
-a {
+nav a {
   text-decoration: none;
   color: var(--clr-accent);
+  padding: 0.5rem 1rem;
 }
 
 /* Section titles */
@@ -98,6 +108,7 @@ a {
 
 .project {
   position: relative;
+  border-radius: 20px;
 }
 
 .projects {
@@ -109,7 +120,7 @@ a {
 
 .project-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border: 8px solid var(--clr-1);
   border-radius: 20px;
   object-fit: cover;
@@ -136,21 +147,41 @@ a {
 .contact-list {
   display: flex;
   justify-content: space-evenly;
-  margin: 2rem 2rem;
   flex-wrap: no-wrap;
 }
 
 .contact-item {
   display: inline-flex;
   min-width: 88px;
-  white-space: nowrap;
+  background-color: var(--clr-accent);
+  color: var(--clr-1);
+  padding: 1em;
+  border-radius: 100vmax;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: var(--clr-1);
+}
+
+footer .footnote {
+  background: var(--clr-1);
+  margin: 0;
+  padding: 1.5em;
+  font-size: var(--fs-h3);
+  text-align: right;
 }
 
 /* Pseudo classes */
-/* !need to figure out how to get product description to rotate when img is in hover */
-.project-img:hover {
-  box-shadow: 5px 5px 10px var(--clr-1);
-  transform: rotate(2deg);
+
+.project:hover {
+  box-shadow: 10px 10px 15px var(--clr-1), 5px 5px 10px var(--clr-accent);
+  transform: rotate(1deg);
+}
+
+nav a:hover {
+  background-color: var(--clr-accent);
+  color: var(--clr-1);
 }
 
 /* adjusts text size for larger devices */
