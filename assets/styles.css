@@ -48,7 +48,7 @@ h3 {
 
 h1 {
   font-size: var(--fs-h1);
-  margin: 1rem 0 0 2rem;
+  text-align: center;
 }
 h2 {
   font-size: var(--fs-h2);
@@ -111,12 +111,12 @@ nav a {
 }
 
 .section-title {
-  margin: 2rem 50% 1rem 0;
-  padding: 1rem 0 1rem 4%;
+  margin: 2rem 0 1rem 0;
+  padding: 1rem;
   background: var(--clr-1);
   border-radius: 0 100vmax 100vmax 0;
-  min-width: 225px;
-  max-width: 500px;
+  max-width: 50%;
+  text-align: center;
 }
 
 /* about me section */
@@ -285,6 +285,11 @@ footer .footnote {
     --fs-h3: 1.75rem;
     --fs-text: 1.5rem;
   }
+
+  h1 {
+    margin: 1rem 0 0 2rem;
+    text-align: left;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -317,19 +322,17 @@ footer .footnote {
   }
 
   .section-title {
-    margin: 10px 35% 10px 0;
-    padding: 1rem 0 1rem 4%;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem;
     background: var(--clr-1);
     border-radius: 0 100vmax 100vmax 0;
-    min-width: 225px;
-    max-width: 400px;
+    max-width: 50%;
   }
 
   .section-title-projects,
   .section-title-contact {
     border-radius: 100vmax;
-    margin: 10px 0;
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
   }
 
@@ -368,18 +371,17 @@ footer .footnote {
   }
 
   .section-title {
-    margin: 10px 35% 10px 0;
-    padding: 1rem 0 1rem 4%;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem;
     background: var(--clr-1);
     border-radius: 0 100vmax 100vmax 0;
-    min-width: 225px;
-    max-width: 400px;
+    max-width: 50%;
   }
 
   .section-title-projects {
     border-radius: 100vmax;
-    margin: 10px 0;
-    padding: 1rem 0;
+    /* margin: 10px 0;
+    padding: 1rem 0; */
     text-align: center;
   }
 
