@@ -70,6 +70,10 @@ span {
   font-style: italic;
 }
 
+main {
+  max-width: 1500px;
+}
+
 /* nav section */
 
 nav {
@@ -256,7 +260,7 @@ footer .footnote {
 .about-me-content[data]:hover::after {
   content: attr(data);
   position: absolute;
-  right: 0;
+  right: 3em;
   top: 0;
   min-width: 3rem;
   padding: 1em 2em;
@@ -285,14 +289,34 @@ footer .footnote {
     --fs-h3: 1.75rem;
     --fs-text: 1.5rem;
   }
+}
+
+/* centers content for larger desktop displays */
+@media (min-width: 1492px) {
+  main {
+    margin: 0 auto;
+  }
+
+  .section-title {
+    margin: .5em auto;
+    border-radius: 100vmax;
+  }
+
+  .about-me-content {
+    margin: 0 auto;
+  }
 
   h1 {
-    margin: 1rem 0 0 2rem;
-    text-align: left;
+    text-align: center;
   }
 }
 
-@media (min-width: 1440px) {
+
+/* ----------
+In this section I was playing around with different grid layouts for alternative responsiveness at larger screens. For the purpose of this challenge, I have turned this off to keep it simple, but I've left this code here to come back to for reference.
+---------- */
+
+/* @media (min-width: 1440px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -356,6 +380,7 @@ footer .footnote {
 
   .my-projects {
     grid-area: projects;
+    max-width: 1500px;
   }
 
   .contact-me {
@@ -380,12 +405,10 @@ footer .footnote {
 
   .section-title-projects {
     border-radius: 100vmax;
-    /* margin: 10px 0;
-    padding: 1rem 0; */
     text-align: center;
   }
 
   .about-me-body {
     font-size: 1.5rem;
-  }
+  } */
 }
